@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     },
     contentimg: {
       backgroundColor:'#ffffff',
-      marginTop:60,
+      marginTop:100,
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
       flexDirection:'row'
     },
     text1: {
-      marginTop:85,
+      marginTop:120,
       marginLeft:30,
       fontSize:10,
       textAlign:'left',

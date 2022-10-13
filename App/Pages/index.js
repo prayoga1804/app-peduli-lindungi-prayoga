@@ -4,7 +4,6 @@ import HomeScreen from './HomeScreen';
 import ImmunScreen from './ImmunScreen';
 import EhacScreen from './EhacScreen';
 import CovidTestScreen from './CovidTestScreen';
-import ModuleScreen from './HomeScreen/modul';
 
 export {
     SplashScreen,
@@ -12,6 +11,5 @@ export {
     HomeScreen,
     ImmunScreen,
     EhacScreen,
-    CovidTestScreen,
-    ModuleScreen
+    CovidTestScreen
 };

@@ -26,11 +26,12 @@ import {
     IconStatisCovid
 } from '../../assets';
 
+
 export default HomeScreen = ({navigation}) => {
     return (
       <SafeAreaView style={styles.container}>
         <StatusBar
-                    barStyle="dark-content"
+                    barStyle="light-content"
                     animated={true}
                     backgroundColor="#ffffff" />
 
@@ -38,7 +39,7 @@ export default HomeScreen = ({navigation}) => {
           <Image source={IconProfile} style={styles.imgIcon}/>
           <Text style={styles.text1}>Hi,</Text>
           <TouchableOpacity onPress={()=>navigation.navigate('LoginScreen')}>
-            <Text style={styles.text2}>Julfi Daffa Agung</Text>
+            <Text style={styles.text2}>Pargoy</Text>
           </TouchableOpacity>
           <Image source={IconBell} style={styles.imgIcon2}/>
         </View>
@@ -46,7 +47,7 @@ export default HomeScreen = ({navigation}) => {
         <View style={styles.content2}>
             <View style={styles.content3}>
                 <View style={styles.content4}>
-                <Text style={styles.text3}>Entering A Public Space?</Text>
+                <Text style={styles.text3}>mau masuk ruang public?</Text>
                 <Text style={styles.text4}>Stay alert to stay safe</Text>
                 </View>
                 <Image source={IconHandQr} style={styles.imgIcon3}/>
@@ -85,11 +86,12 @@ export default HomeScreen = ({navigation}) => {
               <Text style={styles.textehac}>EHAC</Text>
             </View>
           </View>
+
           <View style={styles.row2}>
               <View style={styles.icon4}>
               <TouchableOpacity 
                 onPress={() => 
-                  Alert.alert("Info", "Module sedang dalam pengembangan", [
+                  Alert.alert("informasi", "Sedang dalam pengembangan", [
                     {
                       text: "ok",
                       onPress: () => console.log("Ok"),
@@ -97,65 +99,27 @@ export default HomeScreen = ({navigation}) => {
                   ])
                 }>
                 <Image source={IconTravelRegulation} style={styles.travel}/>
-              </TouchableOpacity>
                 <Text style={styles.texttravel}>Travel Regulations</Text>
+                </TouchableOpacity>
               </View>
               <View style={styles.icon5}>
-              <TouchableOpacity 
-                onPress={() => 
-                  Alert.alert("Info", "Module sedang dalam pengembangan", [
-                    {
-                      text: "ok",
-                      onPress: () => console.log("Ok"),
-                    },
-                  ])
-                }>
+             
                 <Image source={IconTelemedicine} style={styles.telemedicine}/>
-              </TouchableOpacity>
                 <Text style={styles.texttelemedicine}>Telemedicine</Text>
+                
               </View>
               <View style={styles.icon6}>
-              <TouchableOpacity 
-                onPress={() => 
-                  Alert.alert("Info", "Module sedang dalam pengembangan", [
-                    {
-                      text: "ok",
-                      onPress: () => console.log("Ok"),
-                    },
-                  ])
-                }>
                 <Image source={IconHealthcare} style={styles.healthcare}/>
-              </TouchableOpacity>
                 <Text style={styles.texthealth}>Healthcare Facility</Text>
               </View>
             </View>
             <View style={styles.row3}>
               <View style={styles.icon7}>
-              <TouchableOpacity 
-                onPress={() => 
-                  Alert.alert("Info", "Module sedang dalam pengembangan", [
-                    {
-                      text: "ok",
-                      onPress: () => console.log("Ok"),
-                    },
-                  ])
-                }>
                 <Image source={IconStatisCovid} style={styles.covid}/>
-                </TouchableOpacity>
                 <Text style={styles.textcovid}>Covid-19 Statistic</Text>
               </View>
               <View style={styles.icon8}>
-              <TouchableOpacity 
-                onPress={() => 
-                  Alert.alert("Info", "Module sedang dalam pengembangan", [
-                    {
-                      text: "ok",
-                      onPress: () => console.log("Ok"),
-                    },
-                  ])
-                }>
                 <Image source={IconFindHospital} style={styles.findhospital}/>
-              </TouchableOpacity>
                 <Text style={styles.textfindhospital}>Find Hospital Bed</Text>
               </View>
             </View>
@@ -199,7 +163,7 @@ const styles = StyleSheet.create({
         marginLeft:120
     },
     content2:{
-        marginTop:10,
+        marginTop:30,
         alignContent:'center',
         alignItems:'center',
         borderColor:'black',

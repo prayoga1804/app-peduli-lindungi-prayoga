@@ -67,7 +67,7 @@ export default SplashScreen = ({navigation}) => {
       flexDirection:'row'
     },
     text1: {
-      marginTop:250,
+      marginTop:300,
       marginLeft:30,
       fontSize:10,
       textAlign:'left',
